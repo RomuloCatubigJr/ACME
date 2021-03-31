@@ -1,0 +1,650 @@
+body {
+    background-color: #ebebeb;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: #001254 12px solid;
+}
+
+.header .container {
+    display: flex;
+    max-width: 998px;
+    width: 100%;
+    margin: 20px;
+}
+
+.header .container .logo {
+    display: flex;
+    width: auto;
+    border-right: solid #CCCCCC 2px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.header .container .logo a{
+    text-decoration: none;
+}
+
+.header .container .logo .image {
+    position: relative;
+    margin-right: 20px;
+ }
+
+ .header .container .logo .image img{
+    width: 100px;
+    position: absolute;
+    top: -10px;
+ }
+
+
+ .header .container .logo div {
+    width: 100px;
+}
+
+.header .container .logo .title {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.header .container .logo .title p {
+    color: #009bfa;
+    font-size: 14px;
+    font-family: arial;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header .container .logo .title h1 {
+    color: #193989;
+    font-size: 36px;
+    font-family: arial;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header .container .menu {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    font-family: arial;
+}
+
+.header .container .menu div{
+    flex: 1;
+    cursor: pointer;
+}
+
+.header .container .menu div a{  
+   text-decoration: none;
+   color: #000000;
+}
+
+.header .container .menu .siteLink {
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #6177ae;
+}
+
+.header .container .menu div:hover {
+    font-weight: bold;
+}
+
+.header .container .icon {
+    display: none;
+    cursor: pointer;
+}
+
+.header .container .icon i{
+    display: block;
+    padding: 20px;
+}
+
+.header .container .icon span{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header { 
+        background-color: #eaecee;
+        border: none;
+    }
+    .header .container {
+        position: relative;
+        margin: 20px 0;
+        justify-content: flex-end;
+    }
+    .header .container .icon {
+        display: block;
+    }
+    .header .container .logo {
+        border: none;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .header .container .menu {
+        position: absolute;
+        flex-direction: column;
+        top: 78px;
+        background-color: #ffffff;
+        padding: 0;
+        z-index: 1;
+        /* display: none; */
+        max-height: 0;
+        transition: max-height .3s ease-out;
+        overflow: hidden;
+    }
+    .header .container .menu div {
+        width: 100%;
+        background-color: #ebebeb;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        text-align: center;
+        color: #707070;
+    }
+    .header .container .menu a {
+        display: inline;
+    }
+    .header .container .close span{
+        display: block;
+        padding: 20px;
+        color: red;
+    }
+    .header .container .close i{
+        display: none;
+    }
+    .header .container .responsive {
+        /* display: flex; */
+        max-height: 415px;
+        -webkit-transition:  max-height .3s ease-out;
+        -moz-transition:  max-height .3s ease-out;
+        transition: max-height .3s ease-out;
+        padding: 20px 50px 50px 50px;
+        width: calc(100% - 100px);
+    }
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    max-height: 1600px;
+}
+
+.banner .container {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .content {
+    max-width: 998px;
+    width: 100%;
+    height: 50%;
+    margin: 146px 20px;
+}
+
+.banner .content .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner .content .box span {
+    font-size: 40px;
+    font-family: helvetica;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    max-width: 450px;
+    width: 100%;
+}
+
+.banner .content .box p {
+    font-size: 22px;
+    font-family: helvetica;
+    font-weight: lighter;
+    color: #ffffff;
+    width: 235px;
+    opacity: .50;
+}
+@media only screen and (max-width: 600px) {
+    .banner {    
+        background-color:#009bfa;
+    }
+    .banner img {
+        display: none;
+    }
+}
+
+.insight {
+    background-color: #ebebeb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.insight .container {
+    max-width: 998px;
+    width: 100%;
+    margin: 30px 20px;
+}
+
+.insight .container .title h1{
+    font-family: helvetica;
+    margin: 0;
+    font-weight: normal;
+}
+
+.insight .container .title p{
+    font-family: helvetica;
+    margin-top: 0;
+}
+
+.insight .container .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.insight .container .group .box {
+    background-color: #ffffff;
+    padding: 30px 20px 20px 20px;
+    width: 281px;
+    min-width: 281px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-right: 20px;
+}
+
+.insight .container .group .box:last-child {
+    margin-right: 0;
+}
+
+.insight .container .group .box  img {
+    width: 100%;
+}
+
+.insight .container .group .box  h1 {
+    margin: 0;
+    font-family: helvetica;
+}
+
+.insight .container .group .item1 {
+  border-bottom: solid 8px #1450d2;  
+  color: #1450d2;
+}
+
+.insight .container .group .item2 {
+    border-bottom: solid 8px #01A49C;  
+    color: #01A49C;
+}
+
+.insight .container .group .item3 {
+    border-bottom: solid 8px #009bfa;  
+    color: #009bfa;
+}
+
+@media only screen and (max-width: 600px) {
+    .insight {
+        background-color: #001254;
+        color: #ffffff;
+    }
+    .insight .container .title {
+        padding: 0 20px;
+    }
+    .insight .container .group {
+        padding: 0 20px;
+    }
+    .insight .container .group .box {
+        box-shadow: none;
+    }
+    .insight .container .group .item1 {
+        border-bottom: solid 8px #01A49C;  
+        color: #01A49C;
+    }
+        
+    .insight .container .group .item3 {
+        border-bottom: solid 8px #01A49C;  
+        color: #01A49C;
+    }
+}
+
+
+@media only screen and (max-width: 998px) {
+    .insight .container .group {
+        overflow-x: scroll;
+    }
+}
+
+.commitment {
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+.commitment .commitment-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.commitment .commitment-bg img {
+    width: 100%;
+    min-height: 450px;
+}
+
+.commitment .commitment-bg .fractal {
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.commitment .commitment-bg .group {
+    position: absolute;
+    max-width: 998px;
+    width: 100%;
+    margin: 0 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.commitment .commitment-bg .group h1 {
+    margin: 0;
+}
+
+.commitment .commitment-bg .group .contain{
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    font-family: helvetica;
+    padding: 0 20px;
+}
+
+.commitment .commitment-bg .group .contain div {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px;
+    border: solid 1px #FFFFFF;
+    text-align: center;
+    width: 160px;
+    cursor: pointer;
+}
+
+.event {
+    background-color: #ebebeb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.event .container {
+    max-width: 998px;
+    width: 100%;
+    margin: 30px 20px;
+}
+
+.event .container .title {
+    margin-bottom: 56px;
+}
+
+.event .container .title h1{
+    font-family: helvetica;
+    margin: 0;
+    font-weight: normal;
+}
+
+.event .container .title p{
+    font-family: helvetica;
+    margin-top: 0;
+}
+
+.event .container .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event .container .group .box {
+    background-color: #1450d2;
+    padding: 80px 20px 0 20px;
+    width: 281px;
+    min-width: 281px;
+    color: #ffffff;
+    font-family: helvetica;
+    position: relative;
+    margin-right: 20px;
+}
+
+.event .container .group .box:last-child {
+    margin-right: 0;
+}
+
+.event .container .group .box  .corner {
+    position: absolute;
+    top: -18px;
+    left: 0;
+}
+
+.event .container .group .box  h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.event .container .group .box  p {
+    margin-top: 0;
+}
+
+.event .container .group .box .date {
+    padding: 18px;
+    position: absolute;
+    background-color: #001254;
+    top: -20px;
+    text-align: center;
+    width: 56px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event .container .group .box .date  h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.event .container .group .box .date  p {
+    margin: 0;
+}
+
+.event .container .group .box .button {
+    margin: 32px 0;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px;
+    border: solid 1px #FFFFFF;
+    text-align: center;
+    width: 160px;
+    cursor: pointer;
+}
+
+.event .container .group .box .place {
+   position: relative;
+   height: 45px;
+}
+
+.event .container .group .box .place img{
+    position: absolute;
+    z-index: 0;
+    width: 108%;
+    height: 50px;
+ }
+
+ .event .container .group .box .place h1{
+    color: black;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 5px;
+ }
+
+ @media only screen and (max-width: 600px) {
+    .event .container .title {
+        padding: 0 20px;
+    }
+    .event .container .title h1{
+        color: #001254;
+    }
+    .event .container .title span{
+        font-weight: bold;
+    }
+    .event .container .group {
+        padding: 0 20px;
+    }
+    .event .container .group .box {
+        background-color: #001254;
+    }
+    .event .container .group .box .date {
+        background-color: #ffffff;
+        color: #01A49C;
+    }         
+}
+
+@media only screen and (max-width: 998px) {
+    .event .container .responsive {
+        width: 100%;
+        overflow-x: scroll;
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
+}
+ 
+ .footer {
+    background-color: #707070;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .footer .container {
+    max-width: 998px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: helvetica;
+}
+
+.footer .container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .container .left p {
+    margin: 0;
+}
+
+.footer .container .right {
+    display: flex;
+    align-items: center;
+}
+
+.footer .container .right div{
+    display: flex;
+    align-items: center;
+}
+
+.footer .container .right div img{
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+}
+
+.footer-menu {
+    padding: 20px 50px;
+    background-color: #c4c1c1;
+    font-family: helvetica;
+    display:none
+}
+
+.footer-menu .policy {
+    display: flex;
+}
+
+.footer-menu .policy div {
+    background-color: #eaecee;
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+    color: #707070;
+    cursor: pointer;
+}
+
+.footer-menu .policy div:last-child {
+    margin-right: 0;
+}
+
+.footer-menu .menu div {
+    width: 100%;
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
+    color: #707070;
+    cursor: pointer;
+}
+
+.footer-menu .link {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-bottom: solid 1px #707070;
+    margin-bottom: 20px;
+
+}
+
+.footer-menu .link a {
+    width: 100%;
+    text-align: center;
+    color: #6177ae;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-menu {
+        display: block;
+    }
+}
